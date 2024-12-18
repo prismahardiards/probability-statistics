@@ -1,0 +1,53 @@
+<h2 id="statement">4</h2>
+Fill in Blanks<br>
+<DIV class="fl" style="width: 670px; height: 620px"><h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+01: # Parameters for the Poisson distribution example
+02: # Lambda value
+03: Lp = 6  
+04: k = 4  
+05: 
+06: # Calculate factorial of k
+07: k1 = 1
+08: for i in range(2, k + 1):
+09:     k1 *= <input size=2 ans="86892071bcc8b4406f09ae8947c74a56b3882f37bbd0143d360ed46622ae5cc5" placeholder="1"></input>
+10: 
+11: # Calculate the probability of getting exactly k events
+12: euler = 2.71828  
+13: poiP = (<input size=2 ans="07a6ee2ffd33a96c98cb022960ee5be1d9bfb1516a9a59c03961138fc86bb53a" placeholder="2"></input> <input size=2 ans="2628eda37d5d9fc975f85586f6a67503bccec3cccf4675447861dd5ab608cd4d" placeholder="3"></input><input size=2 ans="c6d653f59428e4784d6d3a8eb79bb043b56d242fef046d5cd1731dc3734c5b3a" placeholder="4"></input> k) <input size=2 ans="4d455bdc7115a6d1fc90529950400cd3a91f7ca77abbbbb3c3aed67396dfb928" placeholder="5"></input> (euler <input size=2 ans="c0ede01aaaf91788e0031ad23b15f40b9a138e337e76036ec23edebe6008d541" placeholder="6"></input><input size=2 ans="e04da7b65e9574d0e1a57b25d031d9f608d469fb7188e67594058023fa469bad" placeholder="7"></input> (-<input size=2 ans="8a85a6e2bf350af63ca179fe5b0e4d73e6a7b21d2928e87e5f77c9eb21c4aa56" placeholder="8"></input>)) / <input size=2 ans="a5883caf84418d9b398a3f818b0161c77eb507c58abd97acdb1e095da421abb7" placeholder="9"></input>
+14: print("probability of poisson distribution", poiP)
+15: 
+16: # Now calculate the probability of getting 10 or more calls
+17: P10 = 0
+18: for i in range(0, 10):
+19:     fi = 1
+20:     for j in range(2, i + 1):
+21:         fi *= <input size=2 ans="3ee3fd89b914cb79aa823b6003cb2c5f76dd15b35270342581dd3e8aa4ac4cb3" placeholder="10"></input>
+22:     P10 += (Lp <input size=2 ans="a49e2efdc4807fe5c5dba3178afff2e7dead17e3209a26002383967992c087bc" placeholder="11"></input><input size=2 ans="aa6b99d8225fc12bc24e7d3f3a34059eec552f2d3926a1b69e1c0069cf44cb20" placeholder="12"></input> <input size=2 ans="d215be82a2ee12542ffcca5897e714df6d5d66f4644bd9b03aa5f633b24abf48" placeholder="13"></input>) <input size=2 ans="6c124a22182847e1ad54d4b2883e802731635d649c2c28362916a87bf88b2ea2" placeholder="14"></input> (euler <input size=2 ans="c70a264dacae3db1c91d3f30db0883ca8e993342fd46c53db5f45f77f7ff3784" placeholder="15"></input><input size=2 ans="5a8566960a19c0cede6f359a4816358e6e1414de87b14f09645346106360db5c" placeholder="16"></input> (-Lp)) / <input size=2 ans="9c0f046ef15d812bff5c18c86e9ff8a4671bac6b98d0273a4f971881e7bd92e9" placeholder="17"></input>
+23: 
+24: poiP10 = <input size=2 ans="0f47caa1afdc7b7c8f1b627e85db55ba2193692e714b9def1df80f5b9be249b4" placeholder="18"></input> <input size=2 ans="c56901be8c2eb5232c78e3d73d241a4c3baf344d9b24022a137ef9f23846ebff" placeholder="19"></input> <input size=2 ans="1b04b74b277dc472934fc2d12e2a7198986994081bd9525b0cda9cbdf96fcd68" placeholder="20"></input>
+25: print("probability from poisson distribution of getting 10 or more calls", poiP10)
+26: 
+27: # Output value
+28: probability of poisson distribution: 0.1339
+29: probability from poisson distribution of getting 10 or more calls: 0.084<br>
+Q1. Which variable is used to determine the number of successes? <input size=2 ans="3ddb6d21e85631b699e71f985d801bb6a727ac226ea6e2f9c9e5cf8056edde2b" placeholder="21"></input>
+Q2. Which keyword is used to determine the Euler value? <input size=2 ans="2630f0d2b48bc6db9de660222842a58b2c07c0ddb30120f31f6d7f98f709f784" placeholder="22"></input>
+Q3. Which keyword is used to calculate the probability from poisson distribution of getting less than 10 calls? <input size=2 ans="0ddf9c995870f4e64a0c285de7307614eefe3d682caf51ccbb05472c4fbff6bf" placeholder="23"></input>
+Q4. Which keyword is used to calculate the average number of events per interval (lambda)? <input size=2 ans="db1a68be5a304433307ba2cee514709dc0bd205c1373a8cfc621ea70d11f3e0b" placeholder="24"></input>
+Q5. What is the value of probability of poisson distribution? <input size=2 ans="4d50dc0b97b38227683e19e0a96c554decfc4f814e96336b459b78fe043a7742" placeholder="25"></input>
+</DIV>
+</pre>
+<DIV class="fl" style="width: 430px; height: 620px"><h4 id="code">Description</h4>
+<pre class="prettyprint" id="scoring-res"><img src="./img/04poisson.png" alt="Mean">
+</pre>
+</DIV><DIV class="fr" style="width: 1100px; height: 130px"><h4 id="code1">References</h4>
+<pre class="prettyprint" id="scoring-res">
+<h2 id="code1"></h2><a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV><a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>

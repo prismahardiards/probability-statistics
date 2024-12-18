@@ -1,0 +1,51 @@
+<h2 id="statement">8</h2>
+Fill in Blanks<br>
+<DIV class="fl" style="width: 670px; height: 770px"><h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+01: # Observed and expected frequencies
+02: obs = [15, 30, 25, 20, 10, 20]
+03: exp = [20, 20, 20, 20, 20, 20]
+04: 
+05: # Calculate the chi-square (CS) statistic
+06: CS = 0
+07: for i in range(len(obs)):
+08:     CS += (obs[<input size=2 ans="a583b18a6c8b71ae73b3ae47d28ebaac72cd623ca53a25c7be2d16bcef9e8b2f" placeholder="1"></input>] <input size=2 ans="c39e91ecd820dc452b7e6d1110f01446fd14923df205b6cc70fc79693cf33da5" placeholder="2"></input> <input size=2 ans="c367c9dc95d0623a83423398c6eba968470e2173f902b4a866ed74c30fec585e" placeholder="3"></input>[<input size=2 ans="e6c7ae92cdcca49e2ca68f0798f65ac4afc9a5784b538b01ba95fa6f3dcf01f0" placeholder="4"></input>]) ** <input size=2 ans="a0d177b4967a6d99f4ff117defe1c0d23d4e78ca4630febcb948ee9e4520eff3" placeholder="5"></input> / <input size=2 ans="aa91abbf94053fd7732a2953a81a9e8d6fe72251498cd3def99dfeeaa825fd88" placeholder="6"></input>[<input size=2 ans="a83024535c683323ac80577163978db5037e9c3034395cb4ec2cd2275222fa23" placeholder="7"></input>]
+09: print("chi-square statistics", CS)
+10: 
+11: # Degrees of freedom
+12: df = len(<input size=2 ans="cd54874b10243ff6505242bcf8833161f5418eeaf3463c5dc801319a2b00911e" placeholder="8"></input>) <input size=2 ans="7aa3557aaa8890a9dd8068c757b52bbd958aa2ec793853cffd240deef9c53164" placeholder="9"></input> <input size=2 ans="1a09807a0e6928a66d91025ed5fccd713c9edb101e72a1bbcb8a01cd9a53cb51" placeholder="10"></input>  
+13: print("degree of freedom", df)
+14: 
+15: # Critical value for chi-square distribution with 5 degrees of freedom and 5% significance level
+16: alpha = 11.07 
+17: 
+18: # Decision reject null hypothesis if chi-square statistic is greater than critical value
+19: X = <input size=2 ans="8e51b8778bd69e07acfe0db601180eb5ba9a3aeadeca8cea330f69cfcb3e8cf6" placeholder="11"></input> > alpha
+20: print("reject null hypothesis", X)
+21: 
+22: #Output Value
+23: chi-square statistics: 12.5
+24: degree of freedom: 5
+25: reject null hypothesis of chi-square value: True<br>
+Q1. Which parameter is used to determine the 5 degrees of freedom?? <input size=2 ans="acdb9d5578b82ee3cd290b82121faccfde8b736b0fe54119ad578de1d8b089a8" placeholder="12"></input>
+Q2. Which keyword is used to determine data observed?? <input size=2 ans="c79e9348e95962dc1e6964702ce3b27b80797a06475ab376d035a0b05c2853d8" placeholder="13"></input>
+Q3. Which variable is used to calculate chi-square distribution?? <input size=2 ans="a76637deb81ce9634e730a9b25294d0acc374255e15a7b46764661795ec91d2c" placeholder="14"></input>
+Q4. Which keyword is used to determine data expected?? <input size=2 ans="b965626dc080416fc0938522457f69b2ae64b4c07cd81dce84084d0581fa30f6" placeholder="15"></input>
+Q5. Which function is used to counting the amount of data? <input size=2 ans="7838e1e35258673d0fb83929a2dcedf2269160cc38a3fcd558cdeaca99209ce6" placeholder="16"></input>
+Q6. What is the value of reject null hypothesis? <input size=2 ans="4e77e4d905e3b6c36409d99d5788c2d684222e28c4db1181689ae91ce5e17638" placeholder="17"></input>
+Q7. What is the value of chi-square statistics? <input size=2 ans="dbbc7432516d1fa5b50e70db1c6bf09af5931c0def07b8ac87214da463d0e74b" placeholder="18"></input>
+</DIV>
+</pre>
+<DIV class="fl" style="width: 430px; height: 770px"><h4 id="code">Description</h4>
+<pre class="prettyprint" id="scoring-res"><img src="./img/08chi-square.png" alt="Chi-Square">
+</pre>
+</DIV><DIV class="fr" style="width: 1100px; height: 130px"><h4 id="code1">References</h4>
+<pre class="prettyprint" id="scoring-res">
+<h2 id="code1"></h2><a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV><a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>

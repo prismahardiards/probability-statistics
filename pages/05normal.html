@@ -1,0 +1,65 @@
+<h2 id="statement">5</h2>
+Fill in Blanks<br>
+<DIV class="fl" style="width: 670px; height: 620px"><h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+01: # Constants for manual CDF calculation
+02: import math
+03: 
+04: # mean of the distribution
+05: mu = 500  
+06: # standard deviation
+07: sigma = 100 
+08: # lower bound
+09: x1 = 450  
+10: # upper bound
+11: x2 = 650  
+12: # value for "above 700"
+13: xA = 700  
+14: 
+15: # Compute Z-scores
+16: z1 = (x1 - <input size=2 ans="70ac64092b3886d71c4d45204d9d112dcf38d1e6011241ba0055e956499669fe" placeholder="1"></input>) <input size=2 ans="1f45ce56e8612a9e10e0c4cdabdb02d37275097b73c779b73d941f8438adc9b4" placeholder="2"></input> sigma
+17: z2 = (x2 - <input size=2 ans="ccdb3566db542cf881547432ff11a77caa85b05d557c1495b37e53f2ec06f394" placeholder="3"></input>) <input size=2 ans="63d2dbffea25b56ec9cb7f2c79b55253050e8d8ac8aac3566558d21ab71d4572" placeholder="4"></input> sigma
+18: zA = (xA <input size=2 ans="87d4ff8e9a9b7094b2b00ebcba4c534fa092aa37f2db46262b99c083317cb7aa" placeholder="5"></input> <input size=2 ans="2b3d712fc0fbc20977b9460911bf92955d268fd9209de90bdbc2167b5da27cf1" placeholder="6"></input>) / sigma
+19: 
+20: # Standard Normal CDF approximation (using math.erf)
+21: def cdf(z):
+22:     z= 0.5 <input size=2 ans="caa5563ffc4b9a6dda182c2c6ccbddc13b8e881cd82189a7aedf0e3d5a56e764" placeholder="7"></input> (<input size=2 ans="7ed8f0f3b707956d9fb1e889e11153e0aa0a854983081d262fbe5eede32da7ca" placeholder="8"></input> + math.<input size=2 ans="a25d3aa0d1cc85f68663bee722fc580c44286bc792377586a227e06b139cb9a1" placeholder="9"></input>(z / math.<input size=2 ans="1b22620eef4d7d19779d4f579e0ddfcc385d7c9c978e720c262b150e17d46330" placeholder="10"></input>(2)))
+23:     return z
+24: 
+25: # Calculate the cumulative probabilities
+26: p1 = <input size=2 ans="aa0135dba74b02a41dda27b67ef7f7ab47e2e6ee67c727eccd8cb8024e75949c" placeholder="11"></input>(z1)
+27: p2 = cdf(<input size=2 ans="137676dc9a25e3af15c0a33a0434515a6c349ea1de3e03789ee7f3cbf38a5e90" placeholder="12"></input>)
+28: pcA = <input size=2 ans="4ec9b3f125cf058fc23ce6167ec472611dda46188f133c4658e13f7e5c9728dd" placeholder="13"></input>(zA)
+29: 
+30: # Probability between 450 and 650
+31: pB = p2 <input size=2 ans="9086fa3e13f8478bac80b33cd55c6f36cd8d5bf16cfca263aff82949838a7e2f" placeholder="14"></input> <input size=2 ans="3e752a951a9f0dd19c8b587b5da6b7b604a119426dc5ca6f6c39593a57133552" placeholder="15"></input>
+32: print("Probability from normal distribution between 450 and 650", pB)
+33: 
+34: # Probability of scoring above 700
+35: pA700 = <input size=2 ans="17c7f8a2457a4b725d6d5f6b2e2ac67bd74933d9633436bd2756a6920ef5a705" placeholder="16"></input> <input size=2 ans="c55348f45ee79840fc98bcba82e27fb1c17b254f9a5c365553cb1c10c90c47f5" placeholder="17"></input> <input size=2 ans="a8049d9a10ca8e195c6ed312b5b2d48b01ce4964ee9ca20336d38343a55a947b" placeholder="18"></input>
+36: print("Probability from normal distribution above 700", pB)
+37: 
+38: # Output value
+39: probability from normal distribution between 450 and 650: 0.6246
+40: probability from normal distribution above 700: 0.0227<br>
+Q1. Which variable is used to determine the number of occurencess of outcome category for blue colour?? <input size=2 ans="2fe8f514a32275c62afba2505852358c7d4e29cf4dca116e0401435773cb7869" placeholder="19"></input>
+Q2. Which parameter is used to determine the standard deviation of the distribution?? <input size=2 ans="41d91db2872747e12a51f5780a6d7931ccc6eee07ad33276e91e74f486e4086c" placeholder="20"></input>
+Q3. Which variable is used to determine the number of occurencess of outcome category for red colour?? <input size=2 ans="1b32ca4999b0438ce890dad7f10e77db2afe20eec85473fb2f4eb6c40f174d27" placeholder="21"></input>
+Q4. Which variable is used to determine the initial value of student?? <input size=2 ans="07cd35b1f185209ca427376cfcd416dd7163547056fa884042a636140a901941" placeholder="22"></input>
+Q5. Which library is used in this source code implementation? <input size=2 ans="69361c4abfe10a88422dc613f8d42629dfbb610c2d8ac8024b9f55280551074e" placeholder="23"></input>
+Q6. What is the value of Probability from normal distribution between 450 and 650? <input size=2 ans="69f0044be2bb0758a519735fa8879ebf0ee7bbd2d8fff4f667a50b2495042685" placeholder="24"></input>
+</DIV>
+</pre>
+<DIV class="fl" style="width: 430px; height: 620px"><h4 id="code">Description</h4>
+<pre class="prettyprint" id="scoring-res"><img src="./img/05normal.png" alt="Mean">
+</pre>
+</DIV><DIV class="fr" style="width: 1100px; height: 130px"><h4 id="code1">References</h4>
+<pre class="prettyprint" id="scoring-res">
+<h2 id="code1"></h2><a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV><a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>

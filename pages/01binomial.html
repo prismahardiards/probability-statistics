@@ -1,0 +1,54 @@
+<h2 id="statement">1</h2>
+Fill in Blanks<br>
+<DIV class="fl" style="width: 670px; height: 620px"><h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+01: # Parameters for the problem
+02: n = 20  
+03: k = 3   
+04: p = 0.05  
+05: 
+06: # Factorial calculation for parameter n
+07: F1 = 1
+08: for i in range(2, n+1):
+09:     F1 *= <input size=2 ans="59db9aafb533427b96d89789885dea4b7067c8f9b3c1f4baf0206423f11ddc26" placeholder="1"></input>
+10: 
+11: # Factorial calculation for parameter k
+12: F2 = 1
+13: for i in range(2, k+1):
+14:     F2 *= <input size=2 ans="6b61d14d319dc99b14d637f659dd15f4dcc0faeca2e2125921592e113f35308b" placeholder="2"></input>
+15: 
+16: # Factorial calculation for parameter n-k
+17: F3 = 1
+18: for i in range(2, n-k+1):
+19:     F3 *= <input size=2 ans="deecac0ba6fed8f8f873548fd32533b31de30d25a7bc0cc4f0a4c8aa8fada082" placeholder="3"></input>
+20: 
+21: # Binomial coefficient calculation
+22: coeff = F1 // (F2 <input size=2 ans="a71186fcb39da5ad2f5946d26b23431701acc4666bf0b49b10c84fa51ec4b893" placeholder="4"></input> <input size=2 ans="6ab4e10a28689811a027c612574bf656b36cd06dbae310fcf1ebf29f0101c57b" placeholder="5"></input>)
+23: print("binomial coefficients", coeff)
+24: 
+25: # Binomial probability calculation
+26: P = coeff * (<input size=2 ans="63d6b15848b22a70a7aaa05c5702ac065c65ce71b41fe91a4fb72a1973fbeae0" placeholder="6"></input> ** k) * ((<input size=2 ans="2ac878b0e2180616993b4b6aa71e61166fdc86c28d47e359d0ee537eb11d46d3" placeholder="7"></input> <input size=2 ans="a30584d2420bfa43f4ae498d288fffab0f7ec60bdc05274198575aa0e2cd0e68" placeholder="8"></input> <input size=2 ans="a331387e771578fb33893475ddee1da9d609faa5cf49049f47f7cc14550c0fc5" placeholder="9"></input>) ** (n <input size=2 ans="ab9b500a39252cadb8eb8d3defc4f3df806ac10a7ee535eb64d1774c0b847871" placeholder="10"></input> k))
+27: print("binomial probability", P)
+28: 
+29: # Output Values
+30: binomial coefficients: 1140
+31: binomial probabilit: 0.06<br>
+Q1. Which variable is used to determine the number of successes? <input size=2 ans="1629e9b7ce0894fce62a3a514b3728eaa4634502120ee94fdf3682b7381dba15" placeholder="11"></input>
+Q2. Which variable is used to determine the total number of trials? <input size=2 ans="24189eef5fb4aa716ee057ffc3fb26d2e169a25b648b71c8c1efb4b9fe1fd69e" placeholder="12"></input>
+Q3. Which variable is used to determine the probability of success on a single trial? <input size=2 ans="967ab19f1a8bc8bcdb07d5e7798379e92136c5788f859d7b0622bbefc35ca1af" placeholder="13"></input>
+Q4. What is the value of binomial probability? <input size=2 ans="ebf24c1d1b1d18b490cf9c9500622d52d49055d8eef86d2f3d7f77eabf1fdcfd" placeholder="14"></input>
+</DIV>
+</pre>
+<DIV class="fl" style="width: 430px; height: 620px"><h4 id="code">Description</h4>
+<pre class="prettyprint" id="scoring-res"><img src="./img/01binomial.png" alt="Mean">
+</pre>
+</DIV><DIV class="fr" style="width: 1100px; height: 130px"><h4 id="code1">References</h4>
+<pre class="prettyprint" id="scoring-res">
+<h2 id="code1"></h2><a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV><a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>

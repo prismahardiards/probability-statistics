@@ -1,0 +1,43 @@
+<h2 id="statement">7</h2>
+Fill in Blanks<br>
+<DIV class="fl" style="width: 670px; height: 620px"><h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+01: # Parameters for the exponential distribution problem
+02: # rate parameter (1/average time between events) / Lambda value
+03: Le = 1 <input size=2 ans="44ce7d8d729964d4cbf38838d7ee6d9ae151ec7e4b8292cd46265263d0375fe0" placeholder="1"></input> <input size=2 ans="f8b2f96ed09b16bfd24ff625c064408fe19143db121b7944763fcbcc69ab4991" placeholder="2"></input> 
+04: # time for the first part of the problem (5 minutes)
+05: xp1 = 5 
+06: # time for the second part of the problem (15 minutes)
+07: xp2 = 15  
+08: 
+09: # Calculate the probability that the next customer arrives within 5 minutes
+10: P(X <= 5) = <input size=2 ans="4a8596a7790b5ca9e067da401c018b3206befbcf95c38121854d1a0158e7678a" placeholder="3"></input> <input size=2 ans="e83c5397c5a89ef1a90f57c3358633c0169e891b30a53f3001e591ebd4b27f65" placeholder="4"></input> <input size=2 ans="6f91930b7e0d6f24520567b0f8b723352bcd82d6204e52a89542a446178d41de" placeholder="5"></input>^(<input size=2 ans="ffeb048b47876e2f8243dfeb3f2168530af0149fec0532ffcd146f1e4d5d0a98" placeholder="6"></input>lambda * 5)
+11: euler = 2.71828  # approximate value <input size=2 ans="b443cab6d16c3bfd02dd261025c51f1a6d385989b37508e5455240f7a0a78d0b" placeholder="7"></input> Euler'<input size=2 ans="885b9fd9370ece5a456c9f2ac0c8a2e2dc9b175d444a9e34e10d2bc1ce6d4791" placeholder="8"></input> number
+12: expE = <input size=2 ans="3068430da9e4b7a674184035643d9e19af3dc7483e31cc03b35f75268401df77" placeholder="9"></input> - <input size=2 ans="d4b6b9ab62f9ff3ce6d4da90456d1c3b187ad8878e66819cf1c1e40964d04eca" placeholder="10"></input> ** (-Le * x1)
+13: print("probability of exponential distribution within 5 minutes", poiP)
+14: 
+15: # Calculate the probability that the next customer arrives after 15 minutes
+16: P(X > 15) = e^(-<input size=2 ans="9907221bb111919b29086a8a865d51f94beaf6d669f53df69793ef35f72fe10e" placeholder="11"></input> * <input size=2 ans="edbb552355ee3e4d8625de2499c056777ac513084d6152d2607fa41b211cc871" placeholder="12"></input>)
+17: expP = <input size=2 ans="439fadd01ed77d276abb757c5563beaa1b4deff2c484ffc152b9b08c2203047d" placeholder="13"></input> <input size=2 ans="3819c282c4cbad6f799a3ce32186f4c129b08659cf203bf6dc26d278f2b23a8a" placeholder="14"></input><input size=2 ans="05d2f16d3da565aa4ad603bfa3662493082ff345540af0105e48488cc25c4ef6" placeholder="15"></input> (-Le <input size=2 ans="3e2db63dd2825678cfe5c02704cee04087845a113c9ea2ab372a1e13e7591f1e" placeholder="16"></input> x2)
+18: print("probability of exponential distribution after 15 minutes", poiP)
+19: 
+20: # Output value
+21: probability of exponential distribution within 5 minutes: 0.3935
+22: probability of exponential distribution after 15 minutes: 4.0517<br>
+Q1. Which parameter is used to determine the time for the first part of the problem? <input size=2 ans="67aba15ee6fc8a0fbb99bc2677c687a4c99b1bd4a3f9f40aef009ee4cbeb4a6f" placeholder="17"></input>
+Q2. What is the value of probability of exponential distribution after 15 minutes? <input size=2 ans="f4d183a890bde6c70f8d4bd10aa861d364087cd8311c9229fb7008ddb8c320a8" placeholder="18"></input>
+</DIV>
+</pre>
+<DIV class="fl" style="width: 430px; height: 620px"><h4 id="code">Description</h4>
+<pre class="prettyprint" id="scoring-res"><img src="./img/07exponential.png" alt="Mean">
+</pre>
+</DIV><DIV class="fr" style="width: 1100px; height: 130px"><h4 id="code1">References</h4>
+<pre class="prettyprint" id="scoring-res">
+<h2 id="code1"></h2><a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV><a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>

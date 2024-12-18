@@ -1,0 +1,78 @@
+<h2 id="statement">2</h2>
+Fill in Blanks<br>
+<DIV class="fl" style="width: 670px; height: 620px"><h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+01: # Parameters for the multinomial distribution problem
+02: n = 10
+03: 
+04: # Indexing code for number of occurrences of each outcome category or x (red is 1, blue is 2, green is 3, yellow is 4, purple is 5)
+05: x1 = 2
+06: x2 = 3
+07: x3 = 1
+08: x4 = 2
+09: x5 = 2
+10: 
+11: # Indexing code for probability outcome or p (red is 1, blue is 2, green is 3, yellow is 4, purple is 5)
+12: p1 = 0.2
+13: p2 = 0.3
+14: p3 = 0.1
+15: p4 = 0.25
+16: p5 = 0.15
+17: 
+18: # Factorial calculations
+19: Fn = 1
+20: for i in range(2, n + 1):
+21:     Fn *= <input size=2 ans="3d3d6dea887cefc1e7a2ca3e91f4e9c8439335d13b7398ba52fc9f10a6777650" placeholder="1"></input>
+22: 
+23: F1 = 1
+24: for i in range(2, x1 + 1):
+25:     F1 *= <input size=2 ans="a7919bcf8cf010310d8db3715e822f38373c39bdac0e2c4ca584768501ecac73" placeholder="2"></input>
+26: 
+27: F2 = 1
+28: for i in range(2, x2 + 1):
+29:     F2 *= <input size=2 ans="403219726e2d258e28b3efd310b19613c973a89d4720e9f6905154b3877cf12a" placeholder="3"></input>
+30: 
+31: F3 = 1
+32: for i in range(2, x3 + 1):
+33:     F3 *= <input size=2 ans="64b0cf833d08d23b08185c18bb7a0ef21f5a563fecbe2b1052c405f131664e00" placeholder="4"></input>
+34: 
+35: F4 = 1
+36: for i in range(2, x4 + 1):
+37:     F4 *= <input size=2 ans="12515b3f6b5257f248295339da43c53aac302acaed778b31d33eb5a0d3c0fbc8" placeholder="5"></input>
+38: 
+39: F5 = 1
+40: for i in range(2, x5 + 1):
+41:     F5 *= <input size=2 ans="c640ffaf23b6ed414321946cdc7e342af6663ab65d55fc8561f748b2be68bb24" placeholder="6"></input>
+42: 
+43: # Multinomial coefficient calculation
+44: mcoeff = Fn // (F1 <input size=2 ans="ddea8209ecfa846d6b3ce99aa1eadff16d836b8ae98f11d23b7881ba362ab5a8" placeholder="7"></input> F2 <input size=2 ans="98869afe61632c04e8912ed83754b286478e3fdde2a3271870ec98d703afcb7d" placeholder="8"></input> F3 <input size=2 ans="cde78911ba335963f0c27f6b3f82c001339a7171557427fcb4cc1ae165dcc36c" placeholder="9"></input> <input size=2 ans="2d77e3913327108a0feca5e5e7eeedb40559af77ff88cb49f7e643ddffb1ddf9" placeholder="10"></input> <input size=2 ans="87c9dfd30f38b73fd892b097ae341e87606eca25d2a5cae68835ba6729c01ff1" placeholder="11"></input> <input size=2 ans="c39248d72c584f38d81286ef83c28add06a0e741da64824b871b586b025f6117" placeholder="12"></input>)
+45: print("multinomial coefficients", mcoeff)
+46: 
+47: # Probability calculationp
+48: mulP = <input size=2 ans="35fb7b01188b9efe9689503d05fa7eb034ea5cdc79ad4e745db672ee370c2883" placeholder="13"></input> * (p1 ** x1) * (p2 ** x2) * (p3 ** x3) * (p4 ** x4) * (p5 ** <input size=2 ans="d644ee0f34536d7b3ffb71ea7db2bec3bcd384b573a276b04b974e5727d8290d" placeholder="14"></input>)
+49: print("multinomial distribution", mulP)
+50: 
+51: # Output Value
+52: multinomial coefficients: 75600
+53: multinomial distribution: 0.2857<br>
+Q1. Which keyword is used to calculate the factorial value of x4?? <input size=2 ans="66438d26acdfefed23f7227bade7f6367355e39df6febd7a4ea266a7195e2121" placeholder="15"></input>
+Q2. Which variable is used to determine the number of occurencess of outcome category for purple colour?? <input size=2 ans="b2df65a4aa1496be3ca1fbeed18c17f4630252b7956966bdcc491f1fce1ec777" placeholder="16"></input>
+Q3. Which variable is used to determine the number of occurencess of outcome category for yellow colour?? <input size=2 ans="894fb31d828ee131fd36d8aca619fc01a395bd341a7c3b96ee9f7551015f74cc" placeholder="17"></input>
+Q4. Which keyword is used to calculate the factorial value of n?? <input size=2 ans="2cf57d1ab7ab971d6059de701537588ec34a6ed09c7463d0cbd8b886f35d9ca7" placeholder="18"></input>
+Q5. Which keyword is used to calculate the factorial value of x5?? <input size=2 ans="e77dedb381d42a300704ea41156dc0afc365f383fb57f68e3af3aea3605b6970" placeholder="19"></input>
+Q6. What is the value of multinomial distribution? <input size=2 ans="303522936d07ad3881038a626239f1d9c193cd23e3421d247bbf64ab1da9f8fe" placeholder="20"></input>
+</DIV>
+</pre>
+<DIV class="fl" style="width: 430px; height: 620px"><h4 id="code">Description</h4>
+<pre class="prettyprint" id="scoring-res"><img src="./img/02multinomial.png" alt="Mean">
+</pre>
+</DIV><DIV class="fr" style="width: 1100px; height: 130px"><h4 id="code1">References</h4>
+<pre class="prettyprint" id="scoring-res">
+<h2 id="code1"></h2><a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV><a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>
